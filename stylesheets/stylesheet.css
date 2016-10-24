@@ -73,11 +73,17 @@ a:hover {
   color: #fff;
   text-align: center;
   background-color: #159957;
-  /*background-image: linear-gradient(135deg, #C02425, #F0CB35);*/
+  /*background-image: linear-gradient(120deg, #C02425, #F0CB35);*/
   background-image: linear-gradient(120deg, #155799, #159957);
 }
 
-.page-header nav {}
+.page-header nav {
+  position: relative;
+  /*background-image: linear-gradient(90deg, #155799, #159957);*/
+  width: 100%;
+  padding: 0.5rem;
+  z-index: 100;
+}
 
 .page-header nav ul {
   padding-left: 0;
@@ -87,13 +93,18 @@ a:hover {
 .page-header nav ul li {
   opacity: 0.7;
   display: inline-block;
-  margin: 0.2rem 1.2rem;
+  margin: 0rem 1.2rem;
   font-size: 1.0em;
   font-weight: bold;
   -webkit-transition: opacity 0.4s ease-in-out;
   -moz-transition: opacity 0.4s ease-in-out;
   -o-transition: opacity 0.4s ease-in-out;
   transition: opacity 0.4s ease-in-out;
+}
+
+.page-header nav ul li a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .page-header nav ul li:hover {
@@ -105,29 +116,29 @@ a:hover {
 }
 
 @media screen and (min-width: 64em) {
-  .page-header {
-    padding: 1rem 6rem 5rem;
+  .project-name {
+    padding: 3rem 6rem 0rem;
   }
-  .page-header nav {
-    padding-bottom: 4rem
+  .project-tagline {
+    padding: 0rem 6rem 5rem;
   }
 }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
-  .page-header {
-    padding: 1rem 4rem 3rem;
+  .project-name {
+    padding: 3rem 4rem 0rem;
   }
-  .page-header nav {
-    padding-bottom: 2rem
+  .project-tagline {
+    padding: 0rem 4rem 3rem;
   }
 }
 
 @media screen and (max-width: 42em) {
-  .page-header {
-    padding: 1rem 1rem 2rem;
+  .project-name {
+    padding: 2rem 1rem 0rem;
   }
-  .page-header nav {
-    padding-bottom: 1rem
+  .project-tagline {
+    padding: 0rem 1rem 2rem;
   }
 }
 
@@ -155,7 +166,7 @@ a:hover {
 }
 
 .project-tagline {
-  margin-bottom: 2rem;
+  margin-bottom: 0;
   font-weight: normal;
   opacity: 0.7;
 }
