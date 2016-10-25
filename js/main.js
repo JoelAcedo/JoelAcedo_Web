@@ -4,7 +4,7 @@
         $("#nav-header").find("a").click(function() {
 
             var $href = $(this).attr('href');
-            var $anchor = $("#" + $href).offset();
+            var $anchor = $($href).offset();
 
 
             if ($(".btn-nav-header").hasClass("rotate")) {
@@ -39,9 +39,9 @@
 
 function changeNavButtonState(button) {
   if ($(".btn-nav-header").hasClass("rotate")) {
-    $("#nav-header").find("ul").slideUp(200);
+    $("#nav-header").find("ul").slideUp(400);
   } else {
-    $("#nav-header").find("ul").slideDown(200);
+    $("#nav-header").find("ul").slideDown(400);
   }
   $(".btn-nav-header").toggleClass("rotate");
 }
