@@ -19,9 +19,11 @@ size-wh(w, h)
     width: 100%
     padding: 0.5rem
     z-index: 100
+    vertical-align: middle;
 
     ul
       padding-left: 0
+      margin-top: 1rem
       list-style: none;
 
       li
@@ -48,6 +50,38 @@ size-wh(w, h)
   margin-bottom: 0
   font-weight: normal
   opacity: 0.7
+
+.btn-nav-header
+  cursor: pointer
+  // font-size: 2rem
+  position: absolute
+  display: block
+  top: 1rem
+  right: 1rem
+  //float: right;
+  //size-wh(30px, 40px)
+  transition(all, 0.2s)
+  z-index: 200
+
+  span
+    size-wh(30px, 4px)
+    margin-bottom: 6px
+    border-radius: 1000px
+    background-color: rgb(255, 255, 255)
+    opacity: 0.8
+    display: block
+    transition(opacity)
+
+.btn-nav-header:hover span
+  opacity: 1
+  transition(opacity)
+
+.rotate
+  transform: rotate(-90deg);
+  transition(all, 0.2s)
+
+  span
+    opacity: 1
 
 .profile_image
   width: 100%
@@ -82,7 +116,13 @@ size-wh(w, h)
     font-size: 1.25rem
 
   .page-header nav
-    display: block;
+    display: block
+
+    ul
+      display: block !important
+
+  .btn-nav-header
+    display: none
 
 
 @media screen and (min-width: 42em) and (max-width: 64em)
@@ -94,14 +134,21 @@ size-wh(w, h)
     padding: 0rem 4rem 5rem
     font-size: 1.15rem
 
-  .page-header nav
+  .page-header nav ul
     display: none
+    padding-top: 2rem
+    margin-bottom: -1rem
+
+    li
+      display: block
+      padding-bottom: 1rem
 
   .profile_image
     transform: translateY(-4rem)
 
     figure
       size-wh(8rem, 8rem)
+      border 0.4rem solid rgba(255, 255, 255, 0.8)
 
 @media screen and (max-width: 42em)
   .project-name
@@ -112,11 +159,18 @@ size-wh(w, h)
     padding: 0rem 1rem 4rem
     font-size: 1.0rem
 
-  .page-header nav
+  .page-header nav ul
     display: none
+    padding-top: 2rem
+    margin-bottom: -1rem
+
+    li
+      display: block
+      padding-bottom: 1rem
 
   .profile_image
     transform: translateY(-3rem)
 
     figure
       size-wh(8rem, 8rem)
+      border 0.4rem solid rgba(255, 255, 255, 0.8)
