@@ -9,9 +9,11 @@
   width: 100%;
   padding: 0.5rem;
   z-index: 100;
+  vertical-align: middle;
 }
 .page-header nav ul {
   padding-left: 0;
+  margin-top: 1rem;
   list-style: none;
 }
 .page-header nav ul li {
@@ -45,6 +47,48 @@
   font-weight: normal;
   opacity: 0.7;
 }
+.btn-nav-header {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  top: 1rem;
+  right: 1rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  z-index: 200;
+}
+.btn-nav-header span {
+  width: 30px;
+  height: 4px;
+  margin-bottom: 6px;
+  border-radius: 1000px;
+  background-color: #fff;
+  opacity: 0.8;
+  display: block;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+.btn-nav-header:hover span {
+  opacity: 1;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+.rotate {
+  transform: rotate(-90deg);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.rotate span {
+  opacity: 1;
+}
 .profile_image {
   width: 100%;
   margin: 0 auto;
@@ -77,6 +121,12 @@
   .page-header nav {
     display: block;
   }
+  .page-header nav ul {
+    display: block !important;
+  }
+  .btn-nav-header {
+    display: none;
+  }
 }
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .project-name {
@@ -87,8 +137,14 @@
     padding: 0rem 4rem 5rem;
     font-size: 1.15rem;
   }
-  .page-header nav {
+  .page-header nav ul {
     display: none;
+    padding-top: 2rem;
+    margin-bottom: -1rem;
+  }
+  .page-header nav ul li {
+    display: block;
+    padding-bottom: 1rem;
   }
   .profile_image {
     transform: translateY(-4rem);
@@ -96,6 +152,7 @@
   .profile_image figure {
     width: 8rem;
     height: 8rem;
+    border: 0.4rem solid rgba(255,255,255,0.8);
   }
 }
 @media screen and (max-width: 42em) {
@@ -107,8 +164,14 @@
     padding: 0rem 1rem 4rem;
     font-size: 1rem;
   }
-  .page-header nav {
+  .page-header nav ul {
     display: none;
+    padding-top: 2rem;
+    margin-bottom: -1rem;
+  }
+  .page-header nav ul li {
+    display: block;
+    padding-bottom: 1rem;
   }
   .profile_image {
     transform: translateY(-3rem);
@@ -116,5 +179,6 @@
   .profile_image figure {
     width: 8rem;
     height: 8rem;
+    border: 0.4rem solid rgba(255,255,255,0.8);
   }
 }
