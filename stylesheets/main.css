@@ -36,9 +36,17 @@
   -o-transition: opacity 0.4s ease-in-out;
   transition: opacity 0.4s ease-in-out;
 }
+.project-name {
+  margin-top: 0;
+  margin-bottom: 0.1rem;
+}
+.project-tagline {
+  margin-bottom: 0;
+  font-weight: normal;
+  opacity: 0.7;
+}
 .profile_image {
   width: 100%;
-  height: 10rem;
   margin: 0 auto;
   position: absolute;
   transform: translateY(-5rem);
@@ -48,7 +56,7 @@
   width: 10rem;
   height: 10rem;
   margin: 0 auto;
-  border: 0.7rem solid rgba(255,255,255,0.8);
+  border: 0.6rem solid rgba(255,255,255,0.8);
   border-radius: 100%;
   box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
 }
@@ -56,4 +64,57 @@
   max-width: 100%;
   max-height: 100%;
   border-radius: inherit;
+}
+@media screen and (min-width: 64em) {
+  .project-name {
+    padding: 3rem 6rem 0rem;
+    font-size: 3.25rem;
+  }
+  .project-tagline {
+    padding: 0rem 6rem 7rem;
+    font-size: 1.25rem;
+  }
+  .page-header nav {
+    display: block;
+  }
+}
+@media screen and (min-width: 42em) and (max-width: 64em) {
+  .project-name {
+    padding: 3rem 4rem 0rem;
+    font-size: 2.25rem;
+  }
+  .project-tagline {
+    padding: 0rem 4rem 5rem;
+    font-size: 1.15rem;
+  }
+  .page-header nav {
+    display: none;
+  }
+  .profile_image {
+    transform: translateY(-4rem);
+  }
+  .profile_image figure {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+@media screen and (max-width: 42em) {
+  .project-name {
+    padding: 2rem 1rem 0rem;
+    font-size: 1.75rem;
+  }
+  .project-tagline {
+    padding: 0rem 1rem 4rem;
+    font-size: 1rem;
+  }
+  .page-header nav {
+    display: none;
+  }
+  .profile_image {
+    transform: translateY(-3rem);
+  }
+  .profile_image figure {
+    width: 8rem;
+    height: 8rem;
+  }
 }
