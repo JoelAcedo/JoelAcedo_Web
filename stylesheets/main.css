@@ -1,3 +1,5 @@
+/* MIXINS */
+/* HEADER */
 .page-header {
   color: #fff;
   text-align: center;
@@ -201,4 +203,64 @@
     height: 8rem;
     border: 0.4rem solid rgba(255,255,255,0.8);
   }
+}
+/* MAIN CONTENT */
+/* SKILLS */
+.skills-row {
+  margin: 0 auto;
+}
+.skills-row .skill-circle {
+  display: inline-block;
+  margin: 1rem;
+  background-image: linear-gradient(120deg, #155799, #159957);
+  border-radius: 100%;
+}
+.skills-row .skill-circle span {
+  position: absolute;
+  width: 8rem;
+  height: 8rem;
+  line-height: 8rem;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+  font-weight: bold;
+  font-size: 2rem;
+  z-index: 100;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+.skills-row .skill-circle figure {
+  width: 8rem;
+  height: 8rem;
+  margin: 0 auto;
+  border: 0.6rem solid rgba(255,255,255,0);
+  border-radius: 100%;
+}
+.skills-row .skill-circle figure img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: inherit;
+  background: #fff;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+.skills-row .skill-circle:hover span {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+.skills-row .skill-circle:hover figure img {
+  opacity: 0.1;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }

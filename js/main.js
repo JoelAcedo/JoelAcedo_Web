@@ -8,7 +8,7 @@
 
 
             if ($(".btn-nav-header").hasClass("rotate")) {
-              $anchor.top = $anchor.top - $("#nav-header").height();
+              $anchor.top = $anchor.top - $("#nav-header").find("ul").height();
               changeNavButtonState(".btn-nav-header");
             }
 
