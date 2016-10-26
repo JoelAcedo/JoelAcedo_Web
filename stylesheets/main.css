@@ -212,6 +212,8 @@
 .skills-row .skill-circle {
   display: inline-block;
   margin: 1rem;
+  background-image: linear-gradient(120deg, #155799, #159957);
+  border-radius: 100%;
 }
 .skills-row .skill-circle span {
   position: absolute;
@@ -235,8 +237,7 @@
   width: 8rem;
   height: 8rem;
   margin: 0 auto;
-  padding: 0.6rem;
-  background-image: linear-gradient(120deg, #155799, #159957);
+  border: 0.6rem solid rgba(255,255,255,0);
   border-radius: 100%;
 }
 .skills-row .skill-circle figure img {
