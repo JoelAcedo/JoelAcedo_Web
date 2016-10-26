@@ -1,3 +1,5 @@
+/* MIXINS */
+
 transition(property = all, time = 0.4s, effect = ease-in-out)
   -webkit-transition:property time effect;
   -moz-transition: property time effect;
@@ -7,6 +9,9 @@ transition(property = all, time = 0.4s, effect = ease-in-out)
 size-wh(w, h)
   width: w
   height: h
+
+
+/* HEADER */
 
 .page-header
   color: #fff
@@ -39,9 +44,9 @@ size-wh(w, h)
           text-decoration: none
           color: inherit
 
-      li:hover
-        opacity: 1
-        transition(opacity)
+        &:hover
+          opacity: 1
+          transition(opacity)
 
 .nav-open
   max-height: 25rem !important
@@ -78,9 +83,9 @@ size-wh(w, h)
     display: block
     transition(opacity)
 
-.btn-nav-header:hover span
-  opacity: 1
-  transition(opacity)
+  &:hover span
+      opacity: 1
+      transition(opacity)
 
 .rotate
   transform: rotate(-90deg);
@@ -191,3 +196,55 @@ size-wh(w, h)
     figure
       size-wh(8rem, 8rem)
       border 0.4rem solid rgba(255, 255, 255, 0.8)
+
+
+/* MAIN CONTENT */
+
+/* SKILLS */
+
+.skills-row
+  margin: 0 auto
+
+  .skill-circle
+    // size-wh(10rem, 10rem)
+    display: inline-block
+    margin: 1rem
+
+    span
+      position: absolute;
+      size-wh(8rem, 8rem)
+      line-height: 8rem
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+      color: rgb(255, 255, 255)
+      font-weight: bold
+      font-size: 2rem
+      z-index: 100
+      opacity: 0
+      transition(opacity, 0.2s)
+
+    figure
+      size-wh(8rem, 8rem)
+      margin: 0 auto
+      padding: 0.6rem
+      background-image: linear-gradient(120deg, rgba(#155799, 1), rgba(#159957, 1))
+      border-radius: 100%
+
+      img
+        max-width: 100%
+        max-height: 100%
+        border-radius: inherit
+        background: rgb(255, 255, 255)
+        transition(opacity, 0.2s)
+
+    &:hover
+      span
+        opacity: 1
+        transition(opacity, 0.2s)
+
+      figure
+
+        img
+          opacity: 0.1
+          transition(opacity, 0.2s)
