@@ -25,6 +25,7 @@ size-wh(w, h)
       padding-left: 0
       margin-top: 1rem
       list-style: none;
+      // transition(all, 0.5s, cubic-bezier(0.675, 0.170, 0.245, 0.795))
 
       li
         opacity: 0.7
@@ -41,6 +42,11 @@ size-wh(w, h)
       li:hover
         opacity: 1
         transition(opacity)
+
+.nav-open
+  max-height: 25rem !important
+  opacity: 1 !important
+  transition(max-height, 0.5s, cubic-bezier(0.675, 0.170, 0.245, 0.795))
 
 .project-name
   margin-top: 0
@@ -118,8 +124,8 @@ size-wh(w, h)
   .page-header nav
     display: block
 
-    ul
-      display: block !important
+    // ul
+    //   display: block
 
   .btn-nav-header
     display: none
@@ -135,9 +141,13 @@ size-wh(w, h)
     font-size: 1.15rem
 
   .page-header nav ul
-    display: none
+    //display: none
+    max-height: 0
+    overflow: hidden;
     padding-top: 2rem
     margin-bottom: -1rem
+    opacity: 0
+    transition(all, 0.5s, cubic-bezier(0.675, 0.170, 0.245, 0.795))
 
     li
       display: block
@@ -150,6 +160,9 @@ size-wh(w, h)
       size-wh(8rem, 8rem)
       border 0.4rem solid rgba(255, 255, 255, 0.8)
 
+  .btn-nav-header
+    display: block
+
 @media screen and (max-width: 42em)
   .project-name
     padding: 2rem 1rem 0rem
@@ -160,9 +173,13 @@ size-wh(w, h)
     font-size: 1.0rem
 
   .page-header nav ul
-    display: none
+    //display: none
+    max-height: 0
+    overflow: hidden;
     padding-top: 2rem
     margin-bottom: -1rem
+    opacity: 0
+    transition(all, 0.5s, cubic-bezier(0.675, 0.170, 0.245, 0.795))
 
     li
       display: block

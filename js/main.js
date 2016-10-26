@@ -38,10 +38,11 @@
 })(jQuery);
 
 function changeNavButtonState(button) {
-  if ($(".btn-nav-header").hasClass("rotate")) {
-    $("#nav-header").find("ul").slideUp(400);
+  /*if ($(".btn-nav-header").hasClass("rotate")) {
+    //$("#nav-header").find("ul").slideUp(400);
   } else {
-    $("#nav-header").find("ul").slideDown(400);
-  }
+    //$("#nav-header").find("ul").slideDown(400);
+  }*/
   $(".btn-nav-header").toggleClass("rotate");
+  $("#nav-header").find("ul").toggleClass("nav-open");
 }
