@@ -14,6 +14,42 @@ size-wh(w, h)
   width: w
   height: h
 
+/* GENERAL */
+*
+  box-sizing: border-box
+
+body
+  padding: 0
+  margin: 0
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px
+  line-height: 1.5
+  color: #606c71
+
+a
+  color: #1e6bb8
+  text-decoration: none
+
+  &:hover
+    text-decoration: underline;
+
+.btn
+  display: inline-block;
+  margin: 1rem auto
+  color: rgb(21, 153, 87)
+  background-color: rgba(255, 255, 255, 0.2)
+  border-color: rgb(21, 153, 87)
+  border-style: solid;
+  border-width: 0.3rem
+  border-radius: 0.3rem
+  transition(all, 0.2s)
+
+  &:hover
+    color: rgb(255, 255, 255)
+    background-color: rgb(21, 153, 87)
+    text-decoration: none
+
+
 /* HEADER */
 
 .page-header
@@ -202,53 +238,134 @@ size-wh(w, h)
 
 
 /* MAIN CONTENT */
+.main-content
+  h1, h2, h3, h4, h5, h6
+    margin-top: 2rem
+    margin-bottom: 1rem
+    font-weight: normal
+    color: #159957
+
+@media screen and (min-width: 64em)
+  .main-content
+    padding: 6rem 0rem 2rem
+
+  .content
+    max-width: 64rem
+    padding: 0rem 6rem 0rem
+    margin: 0 auto
+    font-size: 1.1rem
+
+@media screen and (min-width: 42em) and (max-width: 64em)
+  .main-content
+    padding: 4rem 0rem 2rem
+
+  .content
+    padding: 0rem 4rem 0rem
+    font-size: 1.1rem
+
+@media screen and (max-width: 42em)
+  .main-content
+    padding: 5rem 0rem 2rem
+
+  .content
+    padding: 0rem 1rem 0rem
+    font-size: 1rem
+
 
 /* SKILLS */
+#skills
 
-.skills-row
-  margin: 0 auto
-  text-align: center;
+  #show-more-btn
+    text-align: center;
+    padding-top: 1rem
 
-  .skill-circle
-    // size-wh(10rem, 10rem)
-    display: inline-block
-    margin: 1rem
-    background-image: linear-gradient(120deg, color-lg1-init, color-lg1-end)
-    border-radius: 100%
+    .btn
+      font-size: 1rem
+      cursor: pointer
 
-    span
-      position: absolute;
-      size-wh(8rem, 8rem)
-      line-height: 8rem
-      display: block;
-      // text-align: center;
-      color: rgb(255, 255, 255)
-      font-weight: bold
-      font-size: 2rem
-      z-index: 100
-      opacity: 0
-      transition(opacity, 0.2s)
+  .skills-row
+    margin: 0 auto
+    text-align: center;
 
-    figure
-      size-wh(8rem, 8rem)
-      margin: 0 auto
-      //padding: 0.6rem
-      border 0.6rem solid rgba(255, 255, 255, 0.0)
+    .skill-circle
+      // size-wh(10rem, 10rem)
+      display: inline-block
+      margin: 1rem
+      background-image: linear-gradient(120deg, color-lg1-init, color-lg1-end)
       border-radius: 100%
 
-      img
-        max-width: 100%
-        max-height: 100%
-        border-radius: inherit
-        background: rgb(255, 255, 255)
-        transition(opacity, 0.2s)
-
-    &:hover
       span
-        opacity: 1
+        position: absolute;
+        size-wh(8rem, 8rem)
+        line-height: 8rem
+        display: block;
+        // text-align: center;
+        color: rgb(255, 255, 255)
+        font-weight: bold
+        font-size: 2rem
+        z-index: 100
+        opacity: 0
         transition(opacity, 0.2s)
 
       figure
+        size-wh(8rem, 8rem)
+        margin: 0 auto
+        //padding: 0.6rem
+        border 0.6rem solid rgba(255, 255, 255, 0.0)
+        border-radius: 100%
+
         img
-          opacity: 0.1
+          max-width: 100%
+          max-height: 100%
+          border-radius: inherit
+          background: rgb(255, 255, 255)
           transition(opacity, 0.2s)
+
+      &:hover
+        span
+          opacity: 1
+          transition(opacity, 0.2s)
+
+        figure
+          img
+            opacity: 0.1
+            transition(opacity, 0.2s)
+
+
+/* SHOW MORE */
+#show-more
+  max-height: 0
+  height: 32rem
+  overflow: hidden
+  //padding-top: 2rem
+  // opacity: 0
+  transition(all, 0.5s, cubic-bezier(0.675, 0.170, 0.245, 0.795))
+
+.show-more-open
+  max-height: 64rem !important
+  // opacity: 1 !important
+  transition(all, 0.5s, cubic-bezier(0.675, 0.170, 0.245, 0.795))
+
+/* EXPERIENCE */
+
+#experience
+
+  #experience-nf
+    text-align: center;
+
+    span
+      display: block
+
+    #nf-span-1
+      font-size: 2rem
+
+    #nf-span-2
+      font-size: 5rem
+
+    #nf-span-3
+      font-size: 2rem
+
+/* SECTION BACKGROUNDS */
+
+.bg-green-blue
+  background-image: linear-gradient(120deg, color-lg1-init, color-lg1-end)

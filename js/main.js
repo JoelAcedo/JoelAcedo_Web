@@ -27,6 +27,10 @@
           return false;
         });
 
+        $("#show-more-btn").find("button").click(function() {
+          $("#show-more").toggleClass("show-more-open");
+        });
+
         // $(window).scroll(function() {
         //   if ($(this).scrollTop() > $('.page-header').height()) {
         //     $('#nav-header').fadeIn(300);

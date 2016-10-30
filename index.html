@@ -13,10 +13,17 @@
   <script src="http://code.jquery.com/jquery-latest.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
   <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
     ga('create', 'UA-86305700-1', 'auto');
     ga('send', 'pageview');
@@ -25,7 +32,7 @@
 
 <body>
 
-  <section class="page-header">
+  <header class="page-header">
     <nav id="nav-header">
       <div class="btn-nav-header">
         <span></span>
@@ -50,97 +57,134 @@
         <img src="img/profile.jpg" alt="Joel Acedo">
       </figure>
     </div>
-  </section>
+  </header>
 
 
 
   <div class="main-content">
     <section id="aboutme">
-      <h3>
-        About me
-      </h3>
-      <p>I am Joel Acedo, a student of Bachelor Degree in Informatics Engineering at Universitat Politècnica de Catalunya in Barcelona.</p>
-      <p>Interested in full-stack web development, especially with MEAN stack, web design, and mobile development. I do the best at every project in order to improve my knowledge.</p>
-      <p>Also I love working in a team, you have the possibility to know people with different perspective, and you'll learn faster. As the saying goes: "two heads thinks better than one"</p>
+      <div class="content">
+        <h3>
+          About me
+        </h3>
+        <p>I am Joel Acedo, a student of Bachelor Degree in Informatics Engineering at Universitat Politècnica de Catalunya in Barcelona.</p>
+        <p>Interested in full-stack web development, especially with MEAN stack, web design, and mobile development. I do the best at every project in order to improve my knowledge.</p>
+        <p>Also I love working in a team, you have the possibility to know people with different perspective, and you'll learn faster. As the saying goes: "two heads thinks better than one"</p>
+      </div>
     </section>
 
     <section id="skills">
-      <h3>Skills</h3>
+      <div class="content">
+        <h3>Skills</h3>
 
-      <div class="skills-row">
-        <div class="skill-circle">
-          <span>75%</span>
-          <figure>
-            <img src="img/skills/js.png" alt="JavaScript">
-          </figure>
+        <div class="skills-row">
+          <div class="skill-circle">
+            <span>75%</span>
+            <figure>
+              <img src="img/skills/js.png" alt="JavaScript">
+            </figure>
 
+          </div>
+
+          <div class="skill-circle">
+            <span>85%</span>
+            <figure>
+              <img src="img/skills/html5.png" alt="JavaScript">
+            </figure>
+          </div>
+
+          <div class="skill-circle">
+            <span>85%</span>
+            <figure>
+              <img src="img/skills/css3.png" alt="JavaScript">
+            </figure>
+          </div>
+
+          <div class="skill-circle">
+            <span>75%</span>
+            <figure>
+              <img src="img/skills/node.png" alt="JavaScript">
+            </figure>
+          </div>
         </div>
 
-        <div class="skill-circle">
-          <span>85%</span>
-          <figure>
-            <img src="img/skills/html5.png" alt="JavaScript">
-          </figure>
+        <div class="skills-row">
+          <div class="skill-circle">
+            <span>90%</span>
+            <figure>
+              <img src="img/skills/android.png" alt="JavaScript">
+            </figure>
+          </div>
+
+          <div class="skill-circle">
+            <span>85%</span>
+            <figure>
+              <img src="img/skills/html5.png" alt="JavaScript">
+            </figure>
+          </div>
+
+          <div class="skill-circle">
+            <span>85%</span>
+            <figure>
+              <img src="img/skills/css3.png" alt="JavaScript">
+            </figure>
+          </div>
+
+          <div class="skill-circle">
+            <span>75%</span>
+            <figure>
+              <img src="img/skills/node.png" alt="JavaScript">
+            </figure>
+          </div>
         </div>
 
-        <div class="skill-circle">
-          <span>85%</span>
-          <figure>
-            <img src="img/skills/css3.png" alt="JavaScript">
-          </figure>
-        </div>
-
-        <div class="skill-circle">
-          <span>75%</span>
-          <figure>
-            <img src="img/skills/node.png" alt="JavaScript">
-          </figure>
+        <div id="show-more-btn">
+          <button class="btn">
+            <b>MORE SKILLS</b>
+          </button>
         </div>
       </div>
+    </section>
 
-      <div class="skills-row">
-        <div class="skill-circle">
-          <span>90%</span>
-          <figure>
-            <img src="img/skills/android.png" alt="JavaScript">
-          </figure>
-        </div>
+    <section id="show-more" class="bg-green-blue">
+      <div class="content">
+        <!-- <h3>More skills</h3> -->
       </div>
-
-      <!-- <button class="btn">
-        Show more
-      </button> -->
-
     </section>
 
     <section id="experience">
-      <h3>Experience</h3>
-      <ul>
-        <li>Some skill</li>
-        <li>Some skill</li>
-        <li>Some skill</li>
-        <li>Some skill</li>
-      </ul>
+      <div class="content">
+        <h3>Experience</h3>
+        <div id="experience-nf">
+          <span id="nf-span-1">Oopss!</span>
+          <span id="nf-span-2">404</span>
+          <span id="nf-span-3">Experience not found</span>
+        </div>
+      </div>
     </section>
 
     <section id="education">
-      <h3>Education</h3>
-      <ul>
-        <li>Some skill</li>
-        <li>Some skill</li>
-        <li>Some skill</li>
-        <li>Some skill</li>
-      </ul>
+      <div class="content">
+        <h3>Education</h3>
+        <ul>
+          <li>Some skill</li>
+          <li>Some skill</li>
+          <li>Some skill</li>
+          <li>Some skill</li>
+        </ul>
+      </div>
     </section>
 
     <section id="portafolio">
-      <h3>Portafolio</h3>
-      <ul>
-        <li>Some skill</li>
-        <li>Some skill</li>
-        <li>Some skill</li>
-        <li>Some skill</li>
-      </ul>
+      <div class="content">
+        <h3>Portafolio</h3>
+        <ul>
+          <li>Some skill</li>
+          <li>Some skill</li>
+          <li>Some skill</li>
+          <li>Some skill</li>
+        </ul>
+      </div>
     </section>
 
     <!-- <section id="blog">
@@ -154,21 +198,22 @@
     </section> -->
 
     <section id="contact">
-      <h3>Contact</h3>
-      <p><b>Email: </b> joelacedo2412@gmail.com
+      <div class="content">
+        <h3>Contact</h3>
+        <p><b>Email: </b> joelacedo2412@gmail.com
+      </div>
     </section>
 
     <h3>
       <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
 
     <p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
-
-    <footer class="site-footer">
-
-      <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-    </footer>
-
   </div>
+
+  <footer class="site-footer">
+
+    <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+  </footer>
 </body>
 
 </html>
