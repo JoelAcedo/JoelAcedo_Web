@@ -251,7 +251,7 @@ a
 
   .content
     max-width: 64rem
-    padding: 0rem 6rem 0rem
+    padding: 1rem 6rem 1rem
     margin: 0 auto
     font-size: 1.1rem
 
@@ -260,7 +260,7 @@ a
     padding: 4rem 0rem 2rem
 
   .content
-    padding: 0rem 4rem 0rem
+    padding: 0.5rem 4rem 0.5rem
     font-size: 1.1rem
 
 @media screen and (max-width: 42em)
@@ -268,20 +268,14 @@ a
     padding: 5rem 0rem 2rem
 
   .content
-    padding: 0rem 1rem 0rem
+    padding: 0.5rem 1rem 0.5rem
     font-size: 1rem
 
 
 /* SKILLS */
 #skills
-
-  #show-more-btn
-    text-align: center;
-    padding-top: 1rem
-
-    .btn
-      font-size: 1rem
-      cursor: pointer
+  z-index: 100
+  position: relative;
 
   .skills-row
     margin: 0 auto
@@ -361,11 +355,28 @@ a
 
     #nf-span-2
       font-size: 5rem
+      font-weight: bold
 
     #nf-span-3
       font-size: 2rem
 
-/* SECTION BACKGROUNDS */
+
+/* BUTTON */
+.btn-section
+  text-align: center;
+  padding-top: 1rem
+
+  .btn
+    font-size: 1rem
+    cursor: pointer
+
+/* AUXILIARS CLASS */
 
 .bg-green-blue
   background-image: linear-gradient(120deg, color-lg1-init, color-lg1-end)
+
+.top-shadow
+  box-shadow: 0px -3px 3px rgba(0,0,0,0.3)
+
+.bottom-shadow
+  box-shadow: 0px 3px 3px rgba(0,0,0,0.3)

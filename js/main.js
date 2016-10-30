@@ -29,6 +29,8 @@
 
         $("#show-more-btn").find("button").click(function() {
           $("#show-more").toggleClass("show-more-open");
+          $("#skills").toggleClass("bottom-shadow");
+          $("#experience").toggleClass("top-shadow");
         });
 
         // $(window).scroll(function() {
