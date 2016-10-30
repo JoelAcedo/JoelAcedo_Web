@@ -374,7 +374,8 @@ a:hover {
   font-size: 2rem;
 }
 #experience #experience-nf #nf-span-2 {
-  font-size: 5rem;
+  margin: -1.5rem 0;
+  font-size: 6rem;
   font-weight: bold;
 }
 #experience #experience-nf #nf-span-3 {
