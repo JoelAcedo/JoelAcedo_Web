@@ -27,7 +27,7 @@ body
   color: #606c71
 
 a
-  color: #1e6bb8
+  color: inherit
   text-decoration: none
 
   &:hover
@@ -96,10 +96,20 @@ a
   margin-top: 0
   margin-bottom: 0.1rem
 
-.project-tagline
-  margin-bottom: 0
-  font-weight: normal
+// .project-tagline
+//   margin-bottom: 0
+//   font-weight: normal
+//   opacity: 0.7
+
+.social-icons i
+  cursor: pointer
+  padding: 0 0.5rem
   opacity: 0.7
+  transition(opacity, 0.2s)
+
+  &:hover
+    opacity: 1
+    transition(opacity, 0.2s)
 
 .btn-nav-header
   cursor: pointer
@@ -161,9 +171,13 @@ a
     padding: 3rem 6rem 0rem
     font-size: 3.25rem
 
-  .project-tagline
-    padding: 0rem 6rem 7rem
-    font-size: 1.25rem
+  // .project-tagline
+  //   padding: 0rem 6rem 7rem
+  //   font-size: 1.25rem
+
+  .social-icons
+    padding: 0.75rem 6rem 7rem
+    font-size: 1.5rem
 
   .page-header nav
     display: block
@@ -180,9 +194,13 @@ a
     padding: 3rem 4rem 0rem
     font-size: 2.25rem
 
-  .project-tagline
-    padding: 0rem 4rem 5rem
-    font-size: 1.15rem
+  // .project-tagline
+  //   padding: 0rem 4rem 5rem
+  //   font-size: 1.15rem
+
+  .social-icons
+    padding: 1rem 4rem 6rem
+    font-size: 1.35rem
 
   .page-header nav ul
     //display: none
@@ -210,11 +228,15 @@ a
 @media screen and (max-width: 42em)
   .project-name
     padding: 2rem 1rem 0rem
-    font-size: 1.75rem
+    font-size: 2.0rem
 
-  .project-tagline
-    padding: 0rem 1rem 4rem
-    font-size: 1.0rem
+  // .project-tagline
+  //   padding: 0rem 1rem 4rem
+  //   font-size: 1.0rem
+
+  .social-icons
+    padding: 1rem 1rem 4.5rem
+    font-size: 1.35rem
 
   .page-header nav ul
     //display: none
@@ -325,6 +347,19 @@ a
             opacity: 0.1
             transition(opacity, 0.2s)
 
+  #show-more-btn
+    // button
+    //   border-width: 0
+    b
+      padding-right: 0.4rem
+
+    i
+      transform: translateY(-0.1rem);
+      transition(transform, 0.4s)
+
+.rotate-arrow
+  transform: rotate(180deg) translateY(-0.1rem) !important
+  transition(transform, 0.4s)
 
 /* SHOW MORE */
 #show-more
