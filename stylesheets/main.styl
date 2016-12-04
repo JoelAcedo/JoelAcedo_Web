@@ -1,6 +1,8 @@
 /* VARIABLES */
 color-lg1-init = #155799
 color-lg1-end = #159957
+color-dark = #263238
+color-gray = #eeeeee
 
 /* MIXINS */
 
@@ -368,6 +370,7 @@ a
   overflow: hidden
   //padding-top: 2rem
   // opacity: 0
+  transform: skewY(-3deg)
   transition(all, 0.5s, cubic-bezier(0.675, 0.170, 0.245, 0.795))
 
 .show-more-open
@@ -378,6 +381,13 @@ a
 /* EXPERIENCE */
 
 #experience
+  transform: skewY(-3deg)
+  background-color: color-gray
+  padding: 2rem 0
+  margin-bottom: 2rem
+
+  .content
+    transform: skewY(3deg)
 
   #experience-nf
     text-align: center;
@@ -395,6 +405,9 @@ a
 
     #nf-span-3
       font-size: 2rem
+
+      strong
+        color: rgb(21, 153, 87)
 
 
 /* BUTTON */

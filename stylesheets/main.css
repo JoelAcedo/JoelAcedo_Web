@@ -379,6 +379,7 @@ a:hover {
   max-height: 0;
   height: 32rem;
   overflow: hidden;
+  transform: skewY(-3deg);
   -webkit-transition: all 0.5s cubic-bezier(0.675, 0.17, 0.245, 0.795);
   -moz-transition: all 0.5s cubic-bezier(0.675, 0.17, 0.245, 0.795);
   -o-transition: all 0.5s cubic-bezier(0.675, 0.17, 0.245, 0.795);
@@ -392,6 +393,15 @@ a:hover {
   transition: all 0.5s cubic-bezier(0.675, 0.17, 0.245, 0.795);
 }
 /* EXPERIENCE */
+#experience {
+  transform: skewY(-3deg);
+  background-color: #eee;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+}
+#experience .content {
+  transform: skewY(3deg);
+}
 #experience #experience-nf {
   text-align: center;
 }
@@ -408,6 +418,9 @@ a:hover {
 }
 #experience #experience-nf #nf-span-3 {
   font-size: 2rem;
+}
+#experience #experience-nf #nf-span-3 strong {
+  color: #159957;
 }
 /* BUTTON */
 .btn-section {
