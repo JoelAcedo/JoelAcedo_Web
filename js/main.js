@@ -30,8 +30,8 @@
         $("#show-more-btn").find("button").click(function() {
           $("#show-more-btn").find("i").toggleClass("rotate-arrow");
           $("#show-more").toggleClass("show-more-open");
-          $("#skills").toggleClass("bottom-shadow");
-          $("#experience").toggleClass("top-shadow");
+          //$("#skills").toggleClass("bottom-shadow");
+          //$("#experience").toggleClass("top-shadow");
         });
 
         // $(window).scroll(function() {
