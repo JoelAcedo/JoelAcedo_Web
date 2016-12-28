@@ -333,6 +333,9 @@ section .content h3:after {
   -o-transition: opacity 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out;
 }
+#skills .skills-row .skill-circle .skill-name {
+  font-size: 1.3rem;
+}
 #skills .skills-row .skill-circle figure {
   width: 8rem;
   height: 8rem;
@@ -384,13 +387,29 @@ section .content h3:after {
 /* SHOW MORE */
 #show-more {
   max-height: 0;
-  height: 32rem;
+  height: 40rem;
   overflow: hidden;
   transform: skewY(-3deg);
   -webkit-transition: all 0.5s cubic-bezier(0.675, 0.17, 0.245, 0.795);
   -moz-transition: all 0.5s cubic-bezier(0.675, 0.17, 0.245, 0.795);
   -o-transition: all 0.5s cubic-bezier(0.675, 0.17, 0.245, 0.795);
   transition: all 0.5s cubic-bezier(0.675, 0.17, 0.245, 0.795);
+}
+#show-more .content {
+  transform: skewY(3deg);
+}
+#show-more .content h3 {
+  color: #eee;
+  text-align: center;
+  font-size: 2rem;
+}
+#show-more .content h3:after {
+  border-color: #eee;
+  width: 5rem;
+  margin: 2px auto;
+}
+#show-more .content .skill-slide {
+  margin: 2rem 0;
 }
 .show-more-open {
   max-height: 64rem !important;
