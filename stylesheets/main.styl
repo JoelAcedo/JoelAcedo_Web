@@ -332,6 +332,9 @@ section .content h3:after
         opacity: 0
         transition(opacity, 0.2s)
 
+      .skill-name
+        font-size: 1.3rem
+
       figure
         size-wh(8rem, 8rem)
         margin: 0 auto
@@ -373,17 +376,36 @@ section .content h3:after
 /* SHOW MORE */
 #show-more
   max-height: 0
-  height: 32rem
+  height: 40rem
   overflow: hidden
   //padding-top: 2rem
   // opacity: 0
   transform: skewY(-3deg)
   transition(all, 0.5s, cubic-bezier(0.675, 0.170, 0.245, 0.795))
 
+  .content
+    transform: skewY(3deg)
+
+    h3
+      color: #eeeeee
+      text-align: center;
+      font-size: 2rem
+
+      &:after
+        border-color: #eeeeee
+        width: 5rem
+        margin: 2px auto
+
+    .skill-slide
+      margin: 2rem 0
+
 .show-more-open
   max-height: 64rem !important
   // opacity: 1 !important
   transition(all, 0.5s, cubic-bezier(0.675, 0.170, 0.245, 0.795))
+
+
+
 
 /* EXPERIENCE */
 
