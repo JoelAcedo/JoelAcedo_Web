@@ -269,6 +269,13 @@ a
     font-weight: normal
     color: #159957
 
+section .content h3:after
+  content: ' '
+  width: 2rem
+  border: 2px solid #159957
+  margin: 2px 0
+  display: block
+
 @media screen and (min-width: 64em)
   .main-content
     padding: 6rem 0rem 2rem
@@ -409,6 +416,30 @@ a
       strong
         color: rgb(21, 153, 87)
 
+
+/* EDUCATION */
+#education
+
+  .education-item
+    margin-bottom: 2rem
+    margin-top: 2rem
+
+    h3
+      margin: 0
+      margin-bottom: 0.3rem
+
+      &:after
+        content: none
+
+      i
+        margin-left: 0.4rem
+        font-size: 1rem
+
+    p
+      margin: 0
+
+    .small
+      font-size: 1rem
 
 /* BUTTON */
 .btn-section

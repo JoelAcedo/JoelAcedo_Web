@@ -266,6 +266,13 @@ a:hover {
   font-weight: normal;
   color: #159957;
 }
+section .content h3:after {
+  content: ' ';
+  width: 2rem;
+  border: 2px solid #159957;
+  margin: 2px 0;
+  display: block;
+}
 @media screen and (min-width: 64em) {
   .main-content {
     padding: 6rem 0rem 2rem;
@@ -421,6 +428,28 @@ a:hover {
 }
 #experience #experience-nf #nf-span-3 strong {
   color: #159957;
+}
+/* EDUCATION */
+#education .education-item {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+#education .education-item h3 {
+  margin: 0;
+  margin-bottom: 0.3rem;
+}
+#education .education-item h3:after {
+  content: none;
+}
+#education .education-item h3 i {
+  margin-left: 0.4rem;
+  font-size: 1rem;
+}
+#education .education-item p {
+  margin: 0;
+}
+#education .education-item .small {
+  font-size: 1rem;
 }
 /* BUTTON */
 .btn-section {
