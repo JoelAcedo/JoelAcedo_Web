@@ -387,7 +387,7 @@ section .content h3:after {
 /* SHOW MORE */
 #show-more {
   max-height: 0;
-  height: 40rem;
+  height: 80rem;
   overflow: hidden;
   transform: skewY(-3deg);
   -webkit-transition: all 0.5s cubic-bezier(0.675, 0.17, 0.245, 0.795);
@@ -398,25 +398,94 @@ section .content h3:after {
 #show-more .content {
   transform: skewY(3deg);
 }
-#show-more .content h3 {
+#show-more .content .skill-slide:first-child {
+  padding: 0;
+}
+#show-more .content .skill-slide {
+  margin: 2rem 0;
+  clear: both;
+  padding: 2rem 0;
+}
+#show-more .content .skill-slide h3 {
   color: #eee;
   text-align: center;
   font-size: 2rem;
 }
-#show-more .content h3:after {
+#show-more .content .skill-slide h3:after {
   border-color: #eee;
   width: 5rem;
   margin: 2px auto;
 }
-#show-more .content .skill-slide {
-  margin: 2rem 0;
+#show-more .content .skill-slide .more-skill-col {
+  color: #eee;
+  width: 50%;
+  min-width: 21rem;
+  display: inline-block;
+  padding-bottom: 2rem;
+  float: left;
+}
+#show-more .content .skill-slide .more-skill-col ul {
+  list-style: none;
+  margin: 0 0;
+  padding: 0 0.5rem;
+}
+#show-more .content .skill-slide .more-skill-col ul li {
+  padding: 0.25rem 0.5rem;
+}
+#show-more .content .skill-slide .more-skill-col ul li i {
+  -webkit-transition: margin-left 0.3s ease;
+  -moz-transition: margin-left 0.3s ease;
+  -o-transition: margin-left 0.3s ease;
+  transition: margin-left 0.3s ease;
+}
+#show-more .content .skill-slide .more-skill-col ul li:hover {
+  background-color: rgba(238,238,238,0.1);
+}
+#show-more .content .skill-slide .more-skill-col ul li:hover i {
+  margin-left: 0.15rem;
+  -webkit-transition: margin-left 0.3s ease;
+  -moz-transition: margin-left 0.3s ease;
+  -o-transition: margin-left 0.3s ease;
+  transition: margin-left 0.3s ease;
+}
+#show-more .content .skill-slide .more-skill-col ul div {
+  display: inline-block;
+}
+#show-more .content .skill-slide .more-skill-col ul .more-skill-score {
+  float: right;
+}
+#show-more .content .skill-slide .more-skill-col ul .empty {
+  color: rgba(238,238,238,0.3);
 }
 .show-more-open {
-  max-height: 64rem !important;
+  max-height: 80rem !important;
   -webkit-transition: all 0.5s cubic-bezier(0.675, 0.17, 0.245, 0.795);
   -moz-transition: all 0.5s cubic-bezier(0.675, 0.17, 0.245, 0.795);
   -o-transition: all 0.5s cubic-bezier(0.675, 0.17, 0.245, 0.795);
   transition: all 0.5s cubic-bezier(0.675, 0.17, 0.245, 0.795);
+}
+@media screen and (min-width: 42em) and (max-width: 64em) {
+  #show-more {
+    height: 76rem;
+  }
+  #show-more ul {
+    font-size: 1rem;
+  }
+  .show-more-open {
+    max-height: 76rem !important;
+  }
+}
+@media screen and (max-width: 50rem) {
+  #show-more {
+    height: 110rem;
+  }
+  #show-more .content .skill-slide .more-skill-col {
+    padding-bottom: 0;
+    width: 100%;
+  }
+  .show-more-open {
+    max-height: 110rem !important;
+  }
 }
 /* EXPERIENCE */
 #experience {
@@ -448,7 +517,7 @@ section .content h3:after {
 #experience #experience-nf #nf-span-3 strong {
   color: #159957;
 }
-/* EDUCATION */
+/* EDUCATION*/
 #education .education-item {
   margin-bottom: 2rem;
   margin-top: 2rem;
@@ -488,4 +557,8 @@ section .content h3:after {
 }
 .bottom-shadow {
   box-shadow: 0px 3px 3px rgba(0,0,0,0.3);
+}
+/* AUXILIAR */
+.display-hide {
+  display: none;
 }

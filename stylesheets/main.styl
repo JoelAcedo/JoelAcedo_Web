@@ -376,7 +376,7 @@ section .content h3:after
 /* SHOW MORE */
 #show-more
   max-height: 0
-  height: 40rem
+  height: 80rem
   overflow: hidden
   //padding-top: 2rem
   // opacity: 0
@@ -386,23 +386,85 @@ section .content h3:after
   .content
     transform: skewY(3deg)
 
-    h3
-      color: #eeeeee
-      text-align: center;
-      font-size: 2rem
-
-      &:after
-        border-color: #eeeeee
-        width: 5rem
-        margin: 2px auto
+    .skill-slide:first-child
+      padding: 0
 
     .skill-slide
       margin: 2rem 0
+      clear: both
+      padding: 2rem 0
+
+      h3
+        color: #eeeeee
+        text-align: center;
+        font-size: 2rem
+
+        &:after
+          border-color: #eeeeee
+          width: 5rem
+          margin: 2px auto
+
+      .more-skill-col
+        color: #eeeeee
+        width: 50%
+        min-width: 21rem
+        display: inline-block
+        padding-bottom: 2rem
+        float: left
+
+        ul
+          list-style: none;
+          margin: 0 0
+          padding: 0 0.5rem
+
+          li
+            padding: 0.25rem 0.5rem
+
+            i
+              transition(margin-left, 0.3s, ease)
+
+            &:hover
+              background-color: rgba(#eeeeee, 0.1)
+
+              i
+                margin-left: 0.15rem
+                transition(margin-left, 0.3s, ease)
+
+          div
+            display: inline-block;
+
+          .more-skill-score
+            float: right
+
+          .empty
+            color: rgba(#eeeeee, 0.3)
 
 .show-more-open
-  max-height: 64rem !important
+  max-height: 80rem !important
   // opacity: 1 !important
   transition(all, 0.5s, cubic-bezier(0.675, 0.170, 0.245, 0.795))
+
+
+@media screen and (min-width: 42em) and (max-width: 64em)
+  #show-more
+    height: 76rem
+
+    ul
+      font-size: 1rem
+
+  .show-more-open
+    max-height: 76rem !important
+
+@media screen and (max-width: 50rem)
+  #show-more
+    height: 110rem
+
+    .content .skill-slide .more-skill-col
+      padding-bottom: 0
+      width: 100%
+
+  .show-more-open
+    max-height: 110rem !important
 
 
 
@@ -439,7 +501,7 @@ section .content h3:after
         color: rgb(21, 153, 87)
 
 
-/* EDUCATION */
+/* EDUCATION*/
 #education
 
   .education-item
@@ -463,6 +525,7 @@ section .content h3:after
     .small
       font-size: 1rem
 
+
 /* BUTTON */
 .btn-section
   text-align: center;
@@ -482,3 +545,9 @@ section .content h3:after
 
 .bottom-shadow
   box-shadow: 0px 3px 3px rgba(0,0,0,0.3)
+
+
+
+/* AUXILIAR */
+.display-hide
+  display: none
