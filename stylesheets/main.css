@@ -149,6 +149,20 @@ a:hover {
 .rotate span {
   opacity: 1;
 }
+/*
+#btn-download-cv
+  //transform: translateX(25%);
+  z-index: 150
+  padding: 0
+  padding-right: 6rem
+
+  .btn
+    color: rgba(255, 255, 255, 0.7)
+    border-color: rgba(255, 255, 255, 0.7)
+    background: rgba(255, 255, 255, 0);
+    float: right
+    transform: translateY(-5rem);
+    font-size: 1rem */
 .profile_image {
   width: 100%;
   margin: 0 auto;
@@ -387,7 +401,7 @@ section .content h3:after {
 /* SHOW MORE */
 #show-more {
   max-height: 0;
-  height: 80rem;
+  height: 76rem;
   overflow: hidden;
   transform: skewY(-3deg);
   -webkit-transition: all 0.5s cubic-bezier(0.675, 0.17, 0.245, 0.795);
@@ -477,7 +491,7 @@ section .content h3:after {
 }
 @media screen and (max-width: 50rem) {
   #show-more {
-    height: 110rem;
+    height: 103rem;
   }
   #show-more .content .skill-slide .more-skill-col {
     padding-bottom: 0;
@@ -491,7 +505,7 @@ section .content h3:after {
 #experience {
   transform: skewY(-3deg);
   background-color: #eee;
-  padding: 2rem 0;
+  padding: 3rem 0;
   margin-bottom: 2rem;
 }
 #experience .content {
