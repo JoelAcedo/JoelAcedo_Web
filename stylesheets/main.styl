@@ -5,6 +5,7 @@ color-lg1-init = #155799
 color-lg1-end = #159957
 color-dark = #263238
 color-gray = #eeeeee
+// linear-gradient(135deg,#1ebbf0 30%,#39dfaa 100%)
 
 /* MIXINS */
 
@@ -394,7 +395,7 @@ section .content h3:after
 /* SHOW MORE */
 #show-more
   max-height: 0
-  height: 76rem
+  height: 77rem
   overflow: hidden
   //padding-top: 2rem
   // opacity: 0
@@ -459,14 +460,14 @@ section .content h3:after
 
 .show-more-open
   max-height: 80rem !important
-  margin-bottom: 2rem
+  // margin-bottom: 2rem
   // opacity: 1 !important
   transition(all, 0.5s, cubic-bezier(0.675, 0.170, 0.245, 0.795))
 
 
 @media screen and (min-width: 42em) and (max-width: 64em)
   #show-more
-    height: 76rem
+    height: 74rem
 
     ul
       font-size: 1rem
@@ -476,7 +477,7 @@ section .content h3:after
 
 @media screen and (max-width: 50rem)
   #show-more
-    height: 103rem
+    height: 106rem
 
     .content .skill-slide .more-skill-col
       padding-bottom: 0
@@ -582,7 +583,7 @@ section .content h3:after
     .info
       .view-on-github
         float: right;
-        transform: translateY(-5.5rem);
+        transform: translateY(-5.6rem);
 
         i
           font-size: 2.5rem
@@ -751,6 +752,13 @@ section .content h3:after
       font-size: 1rem
 
 
+/* CONTACT */
+#contact
+  .content
+    p
+      margin: 1rem 0
+      font-size: 1.3rem
+
 /* BUTTON */
 .btn-section
   text-align: center;
@@ -833,3 +841,6 @@ section .content h3:after
 /* AUXILIAR */
 .display-hide
   display: none
+
+.visibility-hidden
+  visibility: hidden;
