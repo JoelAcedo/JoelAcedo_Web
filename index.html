@@ -11,7 +11,10 @@
   <link rel="stylesheet" type="text/css" href="stylesheets/main.css" media="screen">
   <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   <link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/flexslider.css" >
   <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <!-- <script type="text/javascript" src="js/isotope.pkgd.min.js"></script> -->
+  <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
   <script>
     (function(i, s, o, g, r, a, m) {
@@ -44,9 +47,9 @@
       <ul>
         <li><a href="#aboutme">ABOUT ME</a></li>
         <li><a href="#skills">SKILLS</a></li>
-        <li><a href="#experience">EXPERIENCE</a></li>
+        <!-- <li><a href="#experience">EXPERIENCE</a></li> -->
+        <li><a href="#portafolio">PORTAFOLIO</a></li>
         <li><a href="#education">EDUCATION</a></li>
-        <!-- <li><a href="#portafolio">PORTAFOLIO</a></li> -->
         <!-- <li><a href="blog">BLOG</a></li> -->
         <li><a href="#contact">CONTACT</a></li>
       </ul>
@@ -575,7 +578,7 @@
           <div class="more-skill-col">
             <ul>
               <li>
-                <div class="more-skill-name">Spanish (Native)</div>
+                <div class="more-skill-name">Spanish</div>
                 <div class="more-skill-score">
                   <i class="fa fa-star" aria-hidden="true"></i>
                   <i class="fa fa-star" aria-hidden="true"></i>
@@ -585,7 +588,7 @@
                 </div>
               </li>
               <li>
-                <div class="more-skill-name">Catalan (Fluid)</div>
+                <div class="more-skill-name">Catalan</div>
                 <div class="more-skill-score">
                   <i class="fa fa-star" aria-hidden="true"></i>
                   <i class="fa fa-star" aria-hidden="true"></i>
@@ -599,7 +602,7 @@
           <div class="more-skill-col">
             <ul>
               <li>
-                <div class="more-skill-name">English (Intermediate)</div>
+                <div class="more-skill-name">English</div>
                 <div class="more-skill-score">
                   <i class="fa fa-star" aria-hidden="true"></i>
                   <i class="fa fa-star" aria-hidden="true"></i>
@@ -616,27 +619,138 @@
 
     <section id="experience">
       <div class="content">
-        <h3><b>EXPERIENCE</b></h3>
+        <h3><b>PROFESSIONAL EXPERIENCE</b></h3>
         <div id="experience-nf">
           <span id="nf-span-1">Ooops!</span>
           <span id="nf-span-2">404</span>
           <span id="nf-span-3"><strong>Experience</strong> not found</span>
         </div>
-        <!-- <div>
-          <h4>Send me an offer for correct this</h4>
-        </div> -->
-        <!-- <div class="btn-section">
-          <button class="btn">
-            <b>SEND OFFER</b>
+        <div class="btn-section">
+          <button id="contact-me-btn" class="btn">
+            <b>CONTACT ME</b>
           </button>
-        </div> -->
+        </div>
+      </div>
+    </section>
+
+    <section id="portafolio">
+      <div class="content">
+        <h3><b>PORTAFOLIO</b></h3>
+
+        <div class="project-detail" style="display: none">
+          <div class="project-detail-item">
+            <div id="project-detail-slides" class="flexslider">
+              <ul class="slides">
+              </ul>
+            </div>
+            <div class="project-description-container">
+              <div class="project-description info">
+                <h2 id="project-title-info"></h2>
+                <h4 id="project-subtitle-info"></h4>
+                <div class="view-on-github">
+                  <a href="">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                    <p>View on github</p>
+                  </a>
+                </div>
+              </div>
+              <div class="project-description detail">
+                <p id="project-detail-description"></p>
+              </div>
+            </div>
+          </div>
+          <div class="close-project-detail">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button data-filter="*" class="filter-button is-selected">All</button>
+          <!-- <button data-filter=".filter-website" class="filter-button">Website</button> -->
+          <button data-filter=".filter-android" class="filter-button">Android</button>
+          <button data-filter=".filter-design" class="filter-button">Design</button>
+        </div>
+
+        <div class="grid">
+          <div class="mix portafolio-item filter-android">
+            <img alt="" src="img/projects/movies_thumbnail.jpg" />
+            <div class="overlay">
+              <h4 class="project-item-title">The Movie DB</h4>
+              <p class="project-item-subtitle">Android</p>
+            </div>
+            <div class="display-hide project-item-description" data-images="img/slides/movies/0.jpg,img/slides/movies/1.jpg,img/slides/movies/2.jpg,img/slides/movies/3.jpg,img/slides/movies/4.jpg" data-github="https://github.com/JoelAcedo/tmdb-android">
+              An application for android that displays information about the popular movies from The Movie Database. <br><br>
+              To achieve that, the application is designed with a clean architecture approach, separating the project into different layers: Views (with an MVP model), domain and data.
+              In addition, the app also use libraries or patterns widely used in the sector as they are: Dagger2, Retrofit2, Renderer pattern and Realm DB.
+
+              <!-- Una aplicacion para android que muestra la infromacion sobre las peliculas populares de The Movie Database. Para conseguirlo, la aplicacion esta diseñada con un enfoque de arquitectura limpia,
+              separando el projecto en diferentes capas: vistas (con un modelo MVP), domino y datos. Ademas se utilizan librerias o patrones ampliamente utilizados en el sector como son: Dagger2, Retrofit2, patron Renderer y
+              Realm DB. -->
+            </div>
+          </div>
+          <div class="mix portafolio-item filter-design">
+            <img alt="" src="img/projects/businesscard_thumbnail.jpg" />
+            <div class="overlay">
+              <h4 class="project-item-title">Business card</h4>
+              <p class="project-item-subtitle">Design</p>
+            </div>
+            <div class="display-hide project-item-description" data-images="img/slides/businesscard/0.jpg,img/slides/businesscard/1.jpg,img/slides/businesscard/2.jpg,img/slides/businesscard/3.jpg">
+              Personal bussines card design. <br><br>
+              A minimalist design with the contact details and the name on the front, while on the back side we find a QR code that redirects to this web page. Available in two colors, blue and orange.
+              <!-- Diseño de tarjetas de negocio personal. Un diseño minimalista con los datos de contacto y el nombre en la parte frontal, mientras que por detras encontramos un codigo QR
+              que redirecciona a esta pagina web. Disponible en dos colores, azul y naranja. -->
+            </div>
+          </div>
+          <div class="mix portafolio-item filter-android">
+            <img alt="" src="img/projects/takitea_thumbnail.jpg" />
+            <div class="overlay">
+              <h4 class="project-item-title">Takitea</h4>
+              <p class="project-item-subtitle">Android</p>
+            </div>
+            <div class="display-hide project-item-description" data-images="img/slides/takitea/0.jpg,img/slides/takitea/1.jpg,img/slides/takitea/2.jpg,img/slides/takitea/3.jpg,img/slides/takitea/4.jpg,img/slides/takitea/5.jpg" data-github="https://github.com/JoelAcedo/Takitea">
+              An android application made for a subject. This application allows the client to manage the ticket sales of a theater. <br> <br>
+              To achieve this, from the application the client can publish new theater plays with their respective sessions, also allows the user to buy tickets, selecting the session, the seats and the desired type of tickets.
+              Finally the user can get a list with the name and the seats of all buyers for a particular session of one of the plays.
+              <!-- Esta aplicacion permite al usuario gestionar la venta de entradas de un teatro. Para ello desde la aplicacion se puede dar de alta nuevas peliculas con sus respectivas sesiones,
+              comprar entradas, seleccionando la sesion, los asientos y el tipo de entrada deseado, y finalmente se puede obtener una lista con el nombre y los asientos de todos los compradores
+              para una determinada sesion -->
+            </div>
+          </div>
+          <div class="mix portafolio-item filter-android">
+            <img alt="" src="img/projects/writebook_thumbnail.jpg" />
+            <div class="overlay">
+              <h4 class="project-item-title">Writebook</h4>
+              <p class="project-item-subtitle">Android</p>
+            </div>
+            <div class="display-hide project-item-description" data-images="img/slides/writebook/0.jpg,img/slides/writebook/1.jpg,img/slides/writebook/2.jpg,img/slides/writebook/3.jpg,img/slides/writebook/4.jpg" data-github="https://github.com/JoelAcedo/witebook-android">
+              A simple application that allows the user to write short stories and share with a readers community. <br><br>
+              In this way the reader, can download a few stories each morning and be able to read them throughout the free time that he has through the day. Also, the user can mark his favorite stories and share them with his friends.
+              <!-- Una aplicacion sencilla que permite al usuario escribir relatos cortos y compartilos con una comunidad de lectores. Respecto al lector, la idea es descargar unos cuantos
+              relatos cada mañana y poder leerlos a lo largo del dia en los ratos libres que se tengan. Ademas el usuario puede marcar sus relatos favoritos y compartirlos con sus amigos.
+              Ademas se puden marcar tus relatos favoritos y compartirlos con tus amigos. -->
+            </div>
+          </div>
+          <!-- <div class="mix portafolio-item filter-design">
+            <img alt="" src="img/projects/web.jpg" />
+            <div class="overlay">
+              <h4 class="project-item-title">Android</h4>
+              <p class="project-item-subtitle">Android App</p>
+            </div>
+          </div>
+          <div class="mix portafolio-item filter-design">
+            <img alt="" src="img/projects/photoshop.jpg" />
+            <div class="overlay">
+              <h4 class="project-item-title">Android</h4>
+              <p class="project-item-subtitle">Android App</p>
+            </div>
+          </div> -->
+        </div>
       </div>
     </section>
 
     <section id="education">
       <div class="content">
         <h3><b>EDUCATION</b></h3>
-
         <div class="education-item">
           <div class="small">2013 - 2017 (Expected)</div>
           <h3>Bachelor Degree in Computer Engineering</h3>
@@ -661,18 +775,6 @@
       </div>
     </section>
 
-    <!--<section id="portafolio">
-      <div class="content">
-        <h3><b>PORTAFOLIO</b></h3>
-        <ul>
-          <li>Some skill</li>
-          <li>Some skill</li>
-          <li>Some skill</li>
-          <li>Some skill</li>
-        </ul>
-      </div>
-    </section>-->
-
     <!-- <section id="blog">
       <h3>Blog</h3>
       <ul>
@@ -690,6 +792,12 @@
       </div>
     </section>
   </div>
+
+  <script type="text/javascript" src="js/mixitup.min.js"></script>
+  <script>
+    var mix_container = document.querySelector(".grid");
+    var mixer = mixitup(mix_container);
+  </script>
 </body>
 
 </html>
