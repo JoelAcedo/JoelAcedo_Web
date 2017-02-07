@@ -514,7 +514,6 @@ section .content h3:after {
 #portafolio .project-detail .flexslider {
   border: none;
   background: transparent;
-  background-color: #ddd;
 }
 #portafolio .project-detail .project-description-container {
   overflow: auto;
