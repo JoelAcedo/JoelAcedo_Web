@@ -67,10 +67,10 @@
           if (projectDescription.attr("data-github")) {
             var githubLink = projectDescription.data('github');
             $(".view-on-github").find("a").attr("href", githubLink);
-            $(".view-on-github").removeClass("display-hide");
+            $(".view-on-github").removeClass("visibility-hidden");
           } else {
             $(".view-on-github").find("a").attr("href", "");
-            $(".view-on-github").addClass("display-hide");
+            $(".view-on-github").addClass("visibility-hidden");
           }
 
 

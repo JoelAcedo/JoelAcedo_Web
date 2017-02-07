@@ -401,7 +401,7 @@ section .content h3:after {
 /* SHOW MORE */
 #show-more {
   max-height: 0;
-  height: 76rem;
+  height: 77rem;
   overflow: hidden;
   transform: skewY(-3deg);
   -webkit-transition: all 0.5s cubic-bezier(0.675, 0.17, 0.245, 0.795) 0s;
@@ -473,7 +473,6 @@ section .content h3:after {
 }
 .show-more-open {
   max-height: 80rem !important;
-  margin-bottom: 2rem;
   -webkit-transition: all 0.5s cubic-bezier(0.675, 0.17, 0.245, 0.795) 0s;
   -moz-transition: all 0.5s cubic-bezier(0.675, 0.17, 0.245, 0.795) 0s;
   -o-transition: all 0.5s cubic-bezier(0.675, 0.17, 0.245, 0.795) 0s;
@@ -481,7 +480,7 @@ section .content h3:after {
 }
 @media screen and (min-width: 42em) and (max-width: 64em) {
   #show-more {
-    height: 76rem;
+    height: 74rem;
   }
   #show-more ul {
     font-size: 1rem;
@@ -492,7 +491,7 @@ section .content h3:after {
 }
 @media screen and (max-width: 50rem) {
   #show-more {
-    height: 103rem;
+    height: 106rem;
   }
   #show-more .content .skill-slide .more-skill-col {
     padding-bottom: 0;
@@ -601,7 +600,7 @@ section .content h3:after {
   }
   #portafolio .project-detail .project-description-container .info .view-on-github {
     float: right;
-    transform: translateY(-5.5rem);
+    transform: translateY(-5.6rem);
   }
   #portafolio .project-detail .project-description-container .info .view-on-github i {
     font-size: 2.5rem;
@@ -789,6 +788,11 @@ section .content h3:after {
 #education .education-item .small {
   font-size: 1rem;
 }
+/* CONTACT */
+#contact .content p {
+  margin: 1rem 0;
+  font-size: 1.3rem;
+}
 /* BUTTON */
 .btn-section {
   text-align: center;
@@ -863,4 +867,7 @@ section .content h3:after {
 /* AUXILIAR */
 .display-hide {
   display: none;
+}
+.visibility-hidden {
+  visibility: hidden;
 }
