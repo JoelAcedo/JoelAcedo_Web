@@ -765,6 +765,28 @@ section .content h3:after {
 #experience #experience-nf #nf-span-3 strong {
   color: #159957;
 }
+#experience .experience-item {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+#experience .experience-item h2 {
+  margin: 0;
+  margin-top: -0.25rem;
+  margin-bottom: 0.25rem;
+}
+#experience .experience-item h2:after {
+  content: none;
+}
+#experience .experience-item h2 i {
+  margin-left: 0.4rem;
+  font-size: 1rem;
+}
+#experience .experience-item p {
+  margin: 0;
+}
+#experience .experience-item .small {
+  font-size: 1rem;
+}
 /* EDUCATION*/
 #education .education-item {
   margin-bottom: 2rem;
